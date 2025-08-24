@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gov Schemes Portal</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/style.css">
+  </head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <a href="#">🌐 English</a>
+    <a href="#">♿ Accessibility</a>
+    <a href="Contactus.html">✉ Contact Us</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Gov Schemes Portal <br><span>Ministry of Citizen Welfare</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Scheme.html">Schemes</a></li>
+        <li><a href="Registration.html">Register Application</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <i>🔍</i>
+      <i>🛒</i>
+      <i >🔔</i>
+      <button class="register-btn" onclick="window.location.href='Registration.html'">Register</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Government Schemes & Subsidies for Citizens</h1>
+      <p>Access government welfare programs, apply online, and track your applications all in one place.</p>
+      <div class="hero-buttons">
+        <button class="explore" onclick="window.location.href='Signup.html'">Explore Schemes</button>
+        <button class="check">Check Eligibility</button>
+      </div>
+    </div>
+  </section>
+<section class="search">
+   <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search for schemes, subsidies, or programs...">
+    <select>
+      <option>Category</option>
+      <option>Education</option>
+      <option>Housing</option>
+      <option>Health Care</option>
+    </select>
+    <button>Search</button>
+  </div>
+
+  <!-- Featured Section -->
+  <div class="featured-section">
+    <h2>Featured Schemes</h2>
+    <p>Explore highlighted government programs designed to support <br>citizens in various domains.</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="card-container">
+
+    <!-- Card 1 -->
+    <div class="card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-8.png" alt="Education Program">
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag-edu">Education</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>National Education Scholarship Program</h3>
+        <p>Financial support for students from economically disadvantaged backgrounds to pursue higher education.</p>
+        <p class="eligibility">Eligibility: Students from families with annual income below ₹3,00,000</p>
+        <a href="#" class="view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-6.png" alt="Affordable Housing">
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag-house">Housing</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Affordable Housing Initiative</h3>
+        <p>Subsidized housing for low and middle-income families to promote affordable and quality living conditions.</p>
+        <p class="eligibility">Eligibility: Families from families with annual income below ₹5,00,000</p>
+        <a href="#" class="view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" onclick="window.location.href='Scheme.html'">
+      <img src="Copy of National Education Scholarship Program-7.png" alt="Health Care">
+      <div class="card-content">
+        <div class="tags">
+          <span class="tag-health">Health Care</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Universal Health Coverage Scheme</h3>
+        <p>Comprehensive health insurance plan providing coverage for essential medical treatments and preventive care.</p>
+        <p class="eligibility">Eligibility: All citizens</p>
+        <a href="#" class="view-link">View details &gt;</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!--Browse-->
+<section class="Browse">
+<div class="category-section">
+    <h2>Browse by Category</h2>
+    <p>Find schemes and subsidies specific to your needs across different sectors.</p>
+
+    <div class="category-container">
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Education</h3>
+        <p>12 Schemes</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-heart"></i></div>
+        <h3>Healthcare</h3>
+        <p>9 Schemes</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-tractor"></i></div>
+        <h3>Agriculture</h3>
+        <p>15 Schemes</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Employment</h3>
+        <p>11 Schemes</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-sun"></i></div>
+        <h3>Energy</h3>
+        <p>6 Schemes</p>
+      </div>
+
+      <div class="category-card">
+        <div class="category-icon"><i class="fa-solid fa-house"></i></div>
+        <h3>Housing</h3>
+        <p>7 Schemes</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!--Most popular-->
+<!-- Popular Section -->
+  <div class="popular-section">
+    <h2>Most Popular Schemes</h2>
+    <p>Financial Support Programs Empowering Students Across Streams and Socioeconomic Backgrounds</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="popular-card-container">
+
+    <!-- Card 1 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="yellow.png" alt="Employment">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-employ">Employment</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Rural Employment Guarantee Program</h3>
+        <p>Ensures livelihood security by providing at least 100 days of wage employment in rural areas.</p>
+        <p class="popular-eligibility">Eligibility: Adult members of rural households willing to do unskilled work</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="stra.png" alt="Agriculture">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-agr">Agriculture</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Sustainable Agriculture Development Fund</h3>
+        <p>Financial assistance to farmers for adopting sustainable agricultural practices and technologies.</p>
+        <p class="popular-eligibility">Eligibility: Small and marginal farmers with land holdings</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-4.png" alt="Solar Energy">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-energy">Energy</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Solar Energy Adoption Program</h3>
+        <p>Financial support for students from economically disadvantaged backgrounds to pursue higher education.</p>
+        <p class="popular-eligibility">Eligibility: Residential and commercial property owners</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-17.png" alt="Education">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-edu">Education</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>National Education Scholarship Program</h3>
+        <p>Financial support for students from economically disadvantaged backgrounds to pursue higher education.</p>
+        <p class="popular-eligibility">Eligibility: Students from families with annual income below ₹3,00,000</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-16.png" alt="Business">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-biz">Business</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>National Education Scholarship Program</h3>
+        <p>Financial support for Business from financially disadvantaged backgrounds to pursue development.</p>
+        <p class="popular-eligibility">Eligibility: All citizens</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="popular-card" onclick="window.location.href='Scheme.html'">
+      <img src="National Education Scholarship Program-15.png" alt="Employment">
+      <div class="popular-card-content">
+        <div class="popular-tags">
+          <span class="tag-employ">Employment</span>
+          <span class="tag-active">Active</span>
+          <span>Last updated: May 17, 2025</span>
+        </div>
+        <h3>Rural Employment Guarantee Program</h3>
+        <p>Ensures livelihood security by providing at least 100 days of wage employment in rural areas.</p>
+        <p class="popular-eligibility">Eligibility: Adult members of rural households willing to do unskilled work</p>
+        <a href="#" class="popular-view-link">View details &gt;</a>
+      </div>
+    </div>
+
+  </div>
+<!--How it works-->
+ <section class="how-container" id="how-container">
+    <h2>How It Works</h2>
+    <p>Simple steps to access government schemes and subsidies through our portal.</p>
+    
+    <div class="how-grid">
+      <div class="card1">
+        <div class="icon"><i class="fas fa-user-plus"></i></div>
+        <h3>Register</h3>
+        <p>Create an account to access all services and track your applications.</p>
+      </div>
+      
+      <div class="card2">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <h3>Find Schemes</h3>
+        <p>Browse or search for relevant schemes based on your eligibility criteria.</p>
+      </div>
+      
+      <div class="card3">
+        <div class="icon"><i class="fas fa-file-alt"></i></div>
+        <h3>Apply Online</h3>
+        <p>Complete the application form and upload required documents securely.</p>
+      </div>
+      
+      <div class="card4">
+        <div class="icon"><i class="fas fa-tasks"></i></div>
+        <h3>Track Status</h3>
+        <p>Monitor your application status and receive notifications about approvals.</p>
+      </div>
+      
+      <div class="card5" >
+        <div class="icon"><i class="fas fa-check-circle"></i></div>
+        <h3>Complete</h3>
+        <p>Get confirmation once your application is approved and processed successfully.</p>
+      </div>
+    </div>
+  </section>
+  <!--Track and FAQ-->
+  <section class="main-wrapper" id="main-wrapper">
+   <div class="main-wrapper">
+    <h2 class="page-title">Track Your Applications</h2>
+    <p style="text-align:center;">
+      Stay updated on your scheme applications with our real-time tracking system. 
+      Receive notifications at each stage of the approval process.
+    </p>
+
+    <div class="application-tracker">
+      <!-- Form Section -->
+      <div class="tracker-form-box">
+        <h3>Application Status Lookup</h3>
+        <label>Application ID</label>
+        <input type="text" placeholder="Enter your application ID">
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <button>Track Application</button>
+        <small>For registered users, all applications are available in your account dashboard.</small>
+      </div>
+
+      <!-- Image Section -->
+      <div class="tracker-side-image">
+        <img src="Citizen checking application status-5.png" alt="Tracking">
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-wrapper">
+      <h3 class="faq-title">Frequently Asked Questions</h3>
+      <p style="text-align:center;">Find answers to common questions about government schemes and application process.</p>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I check if I am eligible for a scheme?
+        <span class="faq-symbol"></span></button>
+        <div class="faq-answer">You can check the eligibility criteria listed under each scheme details section.</div>
+   
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What documents do I need to apply for schemes?
+        <span class="faq-symbol"></span></button>
+        <div class="faq-answer">Generally, you may need ID proof, address proof, income certificate, and other relevant documents.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How long does the application process take?
+        <span class="faq-symbol"></span></button>
+        <div class="faq-answer">Processing time varies from scheme to scheme but usually takes 2–4 weeks.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I apply for multiple schemes at once?
+         <span class="faq-symbol"></span></button>
+        <div class="faq-answer">Yes, you can apply for multiple schemes if you meet the eligibility criteria for each.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What should I do if my application is rejected?
+        <span class="faq-symbol"></span></button>
+        <div class="faq-answer">You can reapply after correcting the errors or contact support for more details.</div>
+      </div>
+
+      <a href="#" class="faq-more-btn">View all FAQs →</a>
+    </div>
+  </div>
+</section>
+   <!-- Call to Action Section -->
+  <section class="cta-section">
+    <!-- Images -->
+    <div class="cta-images">
+      <img src="Citizen checking application status-1.png" alt="">
+      <img src="Citizen checking application status-2.png" alt="">
+      <img src="Citizen checking application status-3.png" alt="">
+      <img src="Citizen checking application status-4.png" alt="">
+      <img src="Citizen checking application status-5.png" alt="">
+      <img src="Citizen checking application status.png" alt="">
+    </div>
+
+    <!-- Text + Buttons -->
+    <div class="cta-text">
+      <h2>Ready to Access Government Benefits?</h2>
+      <p>Create an account to find and apply for schemes that can help you and your family.</p>
+      <div class="cta-buttons">
+        <a href="#">Register Now</a>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <!-- About -->
+      <div class="footer-col" onclick="window.location.href='index.html'">
+        <h4>🏛 Gov Schemes Portal</h4>
+        <p>Your one-stop platform for government welfare schemes and subsidies.</p>
+        <div class="footer-social">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">▶</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" onclick="window.location.href='how-container'">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Schemes</a></li>
+          <li><a href="#">Eligibility Checker</a></li>
+          <li><a href="#">Application Status</a></li>
+          <li><a href="#">News & Updates</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col" onclick="window.location.href='Signup.html'">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">Document Guidelines</a></li>
+          <li><a href="#">Application Process</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact" onclick="window.location.href='Contactus.html'">
+        <h4>Contact Us</h4>
+        <p>📍 123 Government Avenue, Capital City</p>
+        <p>📞 1800-123-4567</p>
+        <p>✉ help@govschemes.gov</p>
+        <p>🕒 Mon-Fri: 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Government Schemes Portal. All rights reserved.</p>
+      <p>This is an official government website. All information provided is subject to verification.</p>
+      <p>
+        <a href="#">Accessibility</a> | 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a> | 
+        <a href="#">Sitemap</a>
+      </p>
+    </div>
+  </footer>
+<script src="JS/script.js"></script>
+</body>
+</html>

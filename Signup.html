@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/signup.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <a href="#">🌐 English</a>
+    <a href="#">♿ Accessibility</a>
+    <a href="Contactus.html">✉ Contact Us</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Gov Schemes Portal <br><span>Ministry of Citizen Welfare</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Scheme.html">Schemes</a></li>
+        <li><a href="Registration.html">Register Application</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <i>🔍</i>
+      <i>🛒</i>
+      <i>🔔</i>
+      <img src="Citizen checking application status-4.png" class="register-btn" onclick="window.location.href='Registration.html'"/>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <!-- Left Side (Image) -->
+    <div class="left">
+      <img src="building.jpg" alt="Government Building">
+    </div>
+
+    <!-- Right Side (Signup Form) -->
+    <div class="right">
+      <h2>Signup</h2>
+      <p>Already have an account? <a href="#">Log in</a></p>
+
+      <form>
+        <div class="form-group">
+             <div style="flex:1">
+             <label for="fname">First Name</label>
+          <input type="text" placeholder="First name" required></div>
+           <div style="flex:1">
+           <label for="lname">Last Name</label>
+          <input type="text" placeholder="Last name" required></div>
+        </div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" required>
+         <label for="password">Password</label>
+        <input type="password" placeholder="Your password" required>
+
+        <div class="checkbox">
+          <input type="checkbox" required>
+          <label>I agreed to the <a href="#">terms & conditions</a></label>
+        </div>
+
+        <button type="submit" class="signin-btn" onclick="window.location.href='Signup.html'">Sign in</button>
+      </form>
+
+      <div class="or"><span>OR</span></div>
+
+      <div class="social-btn"><i class="fab fa-facebook"></i> Continue with Facebook</div>
+      <div class="social-btn"><i class="fab fa-google"></i> Continue with Google</div>
+      <div class="social-btn"><i class="fab fa-apple"></i> Continue with Apple</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <!-- About -->
+      <div class="footer-col" onclick="window.location.href='index.html'">
+        <h4>🏛 Gov Schemes Portal</h4>
+        <p>Your one-stop platform for government welfare schemes and subsidies.</p>
+        <div class="footer-social">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">▶</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" onclick="window.location.href='how-container'">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Schemes</a></li>
+          <li><a href="#">Eligibility Checker</a></li>
+          <li><a href="#">Application Status</a></li>
+          <li><a href="#">News & Updates</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col" onclick="window.location.href='Signup.html'">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">Document Guidelines</a></li>
+          <li><a href="#">Application Process</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact" onclick="window.location.href='Contactus.html'">
+        <h4>Contact Us</h4>
+        <p>📍 123 Government Avenue, Capital City</p>
+        <p>📞 1800-123-4567</p>
+        <p>✉ help@govschemes.gov</p>
+        <p>🕒 Mon-Fri: 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Government Schemes Portal. All rights reserved.</p>
+      <p>This is an official government website. All information provided is subject to verification.</p>
+      <p>
+        <a href="#">Accessibility</a> | 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a> | 
+        <a href="#">Sitemap</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

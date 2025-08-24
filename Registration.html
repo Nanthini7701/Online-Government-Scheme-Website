@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="CSS/registration.css">
+
+
+</head>
+<body>
+  
+  <!-- Topbar -->
+  <div class="topbar">
+    <a href="#">🌐 English</a>
+    <a href="#">♿ Accessibility</a>
+    <a href="Contactus.html">✉ Contact Us</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Gov Schemes Portal <br><span>Ministry of Citizen Welfare</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="Scheme.html">Schemes</a></li>
+        <li><a href="Registration.html">Register Application</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <i>🔍</i>
+      <i>🛒</i>
+      <i>🔔</i>
+      <img src="Citizen checking application status-4.png" class="register-btn" onclick="window.location.href='Registration.html'"/>
+    </div>
+  </header>
+
+
+   <h2>Registration Form</h2>
+  <div class="container">
+   
+    <p class="para">Create an account to apply for government schemes and subsidies</p>
+
+    <!-- Step Indicator -->
+    <div class="steps">
+      <div class="step active" id="step1-tab">1 Personal Details</div>
+      <div class="step" id="step2-tab">2 Identity Verification</div>
+      <div class="step" id="step3-tab">3 Confirmation</div>
+    </div>
+
+    <!-- Step 1: Personal Details -->
+    <form id="form-step1" class="form-step">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label>Date of Birth *</label>
+          <input type="date" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Gender *</label>
+          <select required>
+            <option value="">Select your gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mobile Number *</label>
+          <input type="tel" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required>
+          <small>We will send an OTP to verify this number</small>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label>Category *</label>
+          <select required>
+            <option value="">Select your category</option>
+            <option>General</option>
+            <option>OBC</option>
+            <option>SC</option>
+            <option>ST</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Address *</label>
+        <textarea rows="3" placeholder="Enter your complete address" required></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>State *</label>
+          <select required>
+            <option value="">Select your state</option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>PIN Code *</label>
+          <input type="text" placeholder="Enter 6-digit PIN code" pattern="[0-9]{6}" required>
+        </div>
+      </div>
+
+      <button type="button" class="btn" onclick="nextStep(2)">Next: Identity Verification</button>
+    </form>
+
+    <!-- Step 2: Identity Verification -->
+    <form id="form-step2" class="form-step hidden">
+      <div class="form-group">
+        <label>Aadhar Number *</label>
+        <input type="text" placeholder="Enter 12-digit Aadhar number" pattern="[0-9]{12}" required>
+      </div>
+      <div class="form-group">
+        <label>Upload ID Proof *</label>
+        <input type="file" required>
+      </div>
+      <button type="button" class="btn" onclick="nextStep(3)">Next: Confirmation</button>
+    </form>
+
+    <!-- Step 3: Confirmation -->
+    <form id="form-step3" class="form-step hidden">
+      <h3>Confirm Your Details</h3>
+      <p>Please review your details before submitting.</p>
+      <button type="submit" class="btn">Submit Registration</button>
+    </form>
+  </div>
+
+ 
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <!-- About -->
+      <div class="footer-col" onclick="window.location.href='index.html'">
+        <h4>🏛 Gov Schemes Portal</h4>
+        <p>Your one-stop platform for government welfare schemes and subsidies.</p>
+        <div class="footer-social">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">▶</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col" onclick="window.location.href='how-container'">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">All Schemes</a></li>
+          <li><a href="#">Eligibility Checker</a></li>
+          <li><a href="#">Application Status</a></li>
+          <li><a href="#">News & Updates</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col" onclick="window.location.href='Signup.html'">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">Document Guidelines</a></li>
+          <li><a href="#">Application Process</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact" onclick="window.location.href='Contactus.html'">
+        <h4>Contact Us</h4>
+        <p>📍 123 Government Avenue, Capital City</p>
+        <p>📞 1800-123-4567</p>
+        <p>✉ help@govschemes.gov</p>
+        <p>🕒 Mon-Fri: 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Government Schemes Portal. All rights reserved.</p>
+      <p>This is an official government website. All information provided is subject to verification.</p>
+      <p>
+        <a href="#">Accessibility</a> | 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Cookie Policy</a> | 
+        <a href="#">Sitemap</a>
+      </p>
+    </div>
+  </footer>
+
+
+<script src="JS/registration.js">
+
+</script>
+
+</body>
+</html>
